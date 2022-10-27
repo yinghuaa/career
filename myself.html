@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <title>王櫻樺的簡介</title>
+
+    <style type="text/css">
+        * { 
+            font-family: "標楷體"; }
+
+        header { 
+            font-size: 36px;
+            color: #00008B; }
+
+        .col-lg-4 {
+            border: 1px solid; }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+    $(document).ready(function(){
+        $("#I").hover(function(){
+            $("#PICTURE").attr("src","https://www1.pu.edu.tw/~s1101699/CSP/411016995");
+        });
+
+        $("#PU").hover(function(){
+            $("#PICTURE").attr("src","PU.jpg");
+        });
+
+        $("#CSIM").hover(function(){
+            $("#PICTURE").attr("src","CSIM.jpg");
+        });
+
+        $("#PICTURE").click(function(){
+            $("#PICTURE").hide();
+            $("#PICTURE").fadeIn("slow")
+        });
+    });
+    </script>
+
+
+</head>
+    <body bgcolor="#ffffff" text="#000000">
+
+        <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+            <a class="navbar-brand" href="#">MENU</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#aboutme">關於我</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bookmark">喜歡的話</a></li>
+                <li class="nav-item"><a class="nav-link" href="#youtube">推薦影片</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <main class="container-fluid bg-info text-white text-center">
+
+        <nav>
+            <h1><a href="https://www1.pu.edu.tw/~s1101699/CSP/411016995" class="text-reset text-decoration-none text-muted bg-muted" target="_blank" id="I">王櫻樺 (Ying-Hua Wang)</h1>
+            <h2><a href="https://www.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="PU">靜宜大學</a>
+             / <a href="https://csim.pu.edu.tw/" class="text-reset text-decoration-none text-white bg-primary" id="CSIM">資訊管理系</a></h2>
+        </nav>
+
+        <img src="https://www1.pu.edu.tw/~s1101699/CSP/411016995" alt="照片" width="300" height="300" class="img-fluid rounded-circle" id="PICTURE">
+        <br><br><br>
+
+    <div class="row">
+        <session id="aboutme" class="col-lg-4">
+            <header>關於我</header>
+            <h3>系級：靜宜大學資訊管理系二年B班</h3>
+            <h3>學號：411016995</h3>
+            <h3>E-Mail: <a href="mailto:s1101699@gm.pu.edu.tw" class="text-reset text-decoration-none text-white bg-primary">s1101699@gm.pu.edu.tw</a></h3>
+        </session>
+
+        <article id="bookmark" class="col-lg-4">
+            <header>喜歡的話</header>
+            <h3>平凡的腳步也可以走完偉大的行程</h3>
+            <h3>世上沒有絕望的處境，只有對處境絕望的人</h3>
+            <h3>要克服生活的焦慮和沮喪，得先學會做自己的主人</h3>
+        </article>
+
+        <aside id="youtube" class="col-lg-4">
+            <header>推薦影片</header>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/z_35O615BsE" allowfullscreen class="embed-responsive-item"></iframe>
+        </div>
+        </aside>
+    </div><br><br>
+
+        <footer>
+        Copyright ©  王櫻樺. All Rights Reserved.
+        </footer>
+
+    </main> 
+      
+</body>    
+</html>
